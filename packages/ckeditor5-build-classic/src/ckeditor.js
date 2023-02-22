@@ -35,6 +35,7 @@ import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformatio
 
 import SourceEditing from '@ckeditor/ckeditor5-source-editing/src/sourceediting'; // added
 import Markdown from '@ckeditor/ckeditor5-markdown-gfm/src/markdown'; // added
+import Mention from '@ckeditor/ckeditor5-mention/src/mention'; // added
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -67,7 +68,8 @@ ClassicEditor.builtinPlugins = [
 	TableToolbar,
 	TextTransformation,
 	SourceEditing, // added
-	Markdown // added
+	Markdown, // added
+	Mention // added
 ];
 
 // Editor configuration.
