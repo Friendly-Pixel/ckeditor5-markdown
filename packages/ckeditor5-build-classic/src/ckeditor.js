@@ -33,9 +33,12 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 // import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices';
 
-import SourceEditing from '@ckeditor/ckeditor5-source-editing/src/sourceediting'; // added
-import Markdown from '@ckeditor/ckeditor5-markdown-gfm/src/markdown'; // added
-import Mention from '@ckeditor/ckeditor5-mention/src/mention'; // added
+// Added:
+import SourceEditing from '@ckeditor/ckeditor5-source-editing/src/sourceediting';
+import Markdown from '@ckeditor/ckeditor5-markdown-gfm/src/markdown';
+import Mention from '@ckeditor/ckeditor5-mention/src/mention';
+import Code from '@ckeditor/ckeditor5-basic-styles/src/code';
+import CodeBlock from '@ckeditor/ckeditor5-code-block/src/codeblock';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -67,9 +70,13 @@ ClassicEditor.builtinPlugins = [
 	Table,
 	TableToolbar,
 	TextTransformation,
-	SourceEditing, // added
-	Markdown, // added
-	Mention // added
+
+	// added
+	SourceEditing,
+	Markdown,
+	Mention,
+	Code,
+	CodeBlock
 ];
 
 // Editor configuration.
